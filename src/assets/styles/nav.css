@@ -25,5 +25,5 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-align: center; /* Centers the text horizontally */
     line-height: 1.5rem; /* Centers the text vertically */
-    border-radius: 4px; /* Optional: Adds rounded corners */
+    border-radius: 12px; /* Optional: Adds rounded corners */
 }
