@@ -10,9 +10,9 @@ import image2 from "../assets/images/image2.jpg"
 
 const home = () => {
   return (
-    <div>
+    <div id='home'>
         <Navbar/>
-        <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse pr-6 pl-6'>
+        <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse p-6 pt-[2rem] pb-[2rem] homePage'>
           <div className='static w-[80%] flex flex-col justify-center items-start gap-1.5 sm:absolute md:static top-[2rem] md:w-[40%]'>
             <h1 className='md:text-[3rem] font-bold text-[2.5rem]'>You Never Regret Your Decision.</h1>
             <p className='text-gray-600'>Join a community of 50k like-minded dog parents and canine experts. Get answers to your queries, shop for dog services and fresh food, and learn how you can become a better dog parent.</p>

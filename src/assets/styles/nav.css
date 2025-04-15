@@ -1,29 +1,44 @@
-@media(max-width: 1000px){
-    .navItems{
+@media (max-width: 1000px) {
+    .navItems {
         width: 65%;
     }
 }
 
-@media(max-width: 768px){
-    .navItems{
+@media (max-width: 768px) {
+    .navItems {
         display: none;
     }
 }
 
+/* Grooming hover tag on desktop */
 #grooming:hover::before {
     content: "coming soon";
-    display: flex; /* Ensures the content respects width and height */
+    display: flex;
     width: 8rem;
-    justify-content: center;
-    align-items: center;
     height: 3rem;
     background-color: white;
     color: black;
     position: absolute;
     top: 4rem;
     left: 57.5rem;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    text-align: center; /* Centers the text horizontally */
-    line-height: 1.5rem; /* Centers the text vertically */
-    border-radius: 12px; /* Optional: Adds rounded corners */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+                0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* Hamburger Slide Menu */
+.hamburger-menu {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    z-index: 20;
 }
