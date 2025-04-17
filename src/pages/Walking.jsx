@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
 import Review from '../components/Review'
-import Stepper from '../components/stepper'
+import Stepper from '../components/Stepper'
 
 const Walking = () => {
   return (
