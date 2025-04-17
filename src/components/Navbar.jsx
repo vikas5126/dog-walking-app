@@ -23,14 +23,13 @@ const Navbar = () => {
           <Link to={"/grooming"} id='grooming'>
             Grooming
           </Link>
-          {/* <a href="/grooming" id="grooming">Grooming</a> */}
           <span className="absolute top-8 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-white text-black p-2 rounded shadow-lg text-sm w-[8rem] justify-center">
             coming soon
           </span>
         </li>
-        <li className="list-none"><a href="/walking">Walking</a></li>
-        <li className="list-none"><a href="/contact">Contact Us</a></li>
-        <li className="list-none"><a href="/about">About Us</a></li>
+        <li className="list-none"><Link to={"/walking"}>Walking</Link></li>
+        <li className="list-none"><Link to={"/contact"}>Contact Us</Link></li>
+        <li className="list-none"><Link to={"/about"}>About Us</Link></li>
       </ul>
 
       {/* Hamburger toggle */}
@@ -49,11 +48,11 @@ const Navbar = () => {
             <span className="bg-red-600 text-amber-100 text-xs px-3 py-1 rounded-lg">coming soon</span>
           </li>
           <hr />
-          <li><a href="/walking">Walking</a></li>
+          <li><Link to={"/walking"}>Walking</Link></li>
           <hr />
-          <li><a href="/contact">Contact Us</a></li>
+          <li><Link to={"/contact"}>Contact Us</Link></li>
           <hr />
-          <li><a href="/about">About Us</a></li>
+          <li><Link to={"/about"}>About Us</Link></li>
         </ul>
       </div>
 
