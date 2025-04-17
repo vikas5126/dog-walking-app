@@ -1,6 +1,6 @@
 import React from 'react'
 import Spotlight from "../../reactbit/SpotlightCard/SpotlightCard"
-import reviewImage from "../assets/images/testimonialimg.png"
+import reviewImage from "../assets/images/testimonialImg.png"
 const Review = () => {
     const comments = [
         {
