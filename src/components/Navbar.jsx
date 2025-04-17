@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SiDatadog } from "react-icons/si";
 import { GiCrossedBones } from "react-icons/gi";
 import { FiMenu } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,10 @@ const Navbar = () => {
       <ul className="hidden lg:flex w-1/2 justify-around items-center text-lg">
         <li className="list-none"><a href="/">Home</a></li>
         <li className="list-none relative group">
-          <a href="/grooming" id="grooming">Grooming</a>
+          <Link to={"/grooming"} id='grooming'>
+            Grooming
+          </Link>
+          {/* <a href="/grooming" id="grooming">Grooming</a> */}
           <span className="absolute top-8 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-white text-black p-2 rounded shadow-lg text-sm w-[8rem] justify-center">
             coming soon
           </span>
