@@ -28,7 +28,7 @@ const Navbar = () => {
           </span>
         </li>
         <li className="list-none"><Link to={"/walking"}>Walking</Link></li>
-        <li className="list-none"><Link to={"/contact"}>Contact Us</Link></li>
+        {/* <li className="list-none"><Link to={"/contact"}>Contact Us</Link></li> */}
         <li className="list-none"><Link to={"/about"}>About Us</Link></li>
       </ul>
 
@@ -50,8 +50,8 @@ const Navbar = () => {
           <hr />
           <li><Link to={"/walking"}>Walking</Link></li>
           <hr />
-          <li><Link to={"/contact"}>Contact Us</Link></li>
-          <hr />
+          {/* <li><Link to={"/contact"}>Contact Us</Link></li> */}
+          {/* <hr /> */}
           <li><Link to={"/about"}>About Us</Link></li>
         </ul>
       </div>
