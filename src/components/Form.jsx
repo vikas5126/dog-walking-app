@@ -3,7 +3,7 @@ import coverImage from "../assets/images/dogo.jpg";
 import DogWalkingSubscription from "./DogWalkingSubscription ";
 // className='w-[100%] flex flex-col-reverse md:flex-row  gap-6 mt-4'
 const Form = () => {
-  const [selectedOption, setSelectedOption] = useState("One Walk"); // Default option
+  const [selectedOption, setSelectedOption] = useState("Subscription"); // Default option
   const [formData, setFormData] = useState({
     name: "",
     petName: "",
@@ -15,7 +15,7 @@ const Form = () => {
 
   const toggleOption = () => {
     setSelectedOption((prevOption) =>
-      prevOption === "One Walk" ? "Subscription" : "One Walk"
+      prevOption === "Subscription" ? "One Walk" : "Subscription"
     );
   };
   const handleSubmit = async (e) => {
@@ -76,13 +76,13 @@ const Form = () => {
               {/* Options */}
               <div className="absolute w-full flex justify-between px-4 text-base font-semibold text-gray-700">
                 <span
-                  className={selectedOption === "One Walk" ? "text-blue-600" : ""}
+                  className={selectedOption === "Subscription" ? "text-black-600" : ""}
                 >
                  One Walk
                 </span>
                 <span
                   className={
-                    selectedOption === "Subscription" ? "text-green-600" : ""
+                    selectedOption === "One Walk" ? "text-blue-600" : ""
                   }
                 >
                   Subscription
@@ -182,11 +182,11 @@ const Form = () => {
       type="submit"
       className="w-[100%] m-auto h-14 bg-red-700 text-white rounded-md text-xl mt-4 hover:bg-red-800 hover:text-white transition duration-300 ease-in-out"
     >
-      Book FREE Demo Now
+      Book Demo Now
     </button>
   </form>
 ) : (
-  <DogWalkingSubscription />
+  <DogWalkingSubscription selectedOption={toggleOption} />
 )}
 
 

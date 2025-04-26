@@ -11,10 +11,12 @@ const Navbar = () => {
 
   return (
     <div className="navbar flex w-full p-4 bg-[#f0f0f0] justify-between items-center sticky top-0 z-10">
+      <Link to={"/"} >
       <div className="flex items-center gap-2">
         <SiDatadog className="w-16 h-16" />
-        <p className="text-xl font-semibold">Bark & Beyond</p>
+        <p className="text-xl font-semibold">BarkingTales</p>
       </div>
+      </Link>
 
       {/* Desktop nav */}
       <ul className="hidden lg:flex w-1/2 justify-around items-center text-lg">

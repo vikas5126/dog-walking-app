@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 
-const DogWalkingSubscription = () => {
+const DogWalkingSubscription = ({selectedOption}) => {
   const [duration, setDuration] = useState("20 mins");
   const [walks, setWalks] = useState("Uno");
   const [days, setDays] = useState("7 days");
   const [billing, setBilling] = useState("Monthly");
+  // const [selectedOption, setSelectedOption] = useState("Subscription");
+
+  // const toggleOption = () => {
+  //   setSelectedOption((prevOption) =>
+  //     prevOption === "Subscription" ? "One Walk" : "Subscription"
+  //   );
+  // };
 
   const calculatePrice = () => {
     let base = 299;
@@ -53,7 +60,7 @@ const DogWalkingSubscription = () => {
               walks === "Uno" ? "bg-orange-100 border-orange-400" : ""
             }`}
           >
-            Uno – Once a Day
+            Once a Day
           </button>
           <button
             onClick={() => setWalks("Duo")}
@@ -61,7 +68,7 @@ const DogWalkingSubscription = () => {
               walks === "Duo" ? "bg-orange-100 border-orange-400" : ""
             }`}
           >
-            Duo – Twice a Day
+            Twice a Day
           </button>
         </div>
       </div>
@@ -107,7 +114,7 @@ const DogWalkingSubscription = () => {
         </div>
       </div>
 
-      <button className="bg-purple-700 text-white font-semibold py-2 w-full rounded-xl">
+      <button className="bg-purple-700 text-white font-semibold py-2 w-full rounded-xl" onClick={selectedOption}>
         Book Now
       </button>
     </div>
