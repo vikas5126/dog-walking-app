@@ -24,12 +24,15 @@ const Form = () => {
     console.log(formData);
 
     try {
-      const response = await fetch('http://localhost:3000/mail/send-email', {
+      const response = await fetch('https://dog-walking-backend.vercel.app/mail/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
+      console.log(response);
+      if (!response.ok) {
+        throw new Error('Server Error');
+      }
       const data = await response.json();
       if (data.success) {
         setStatus({ message: data.message, success: true });
