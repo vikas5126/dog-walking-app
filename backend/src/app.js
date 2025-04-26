@@ -9,7 +9,7 @@ const port = process.env.PORT;
 const app = express();
 
 // Middleware
-app.use(cors()); // Enable CORS
+app.use(cors({origin:'https://dog-walking-app-server.vercel.app/'})); // Enable CORS
 app.use(express.json()); // Parse incoming JSON requests
 
 // Routes
