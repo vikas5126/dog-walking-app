@@ -24,7 +24,7 @@ const Form = () => {
     console.log(formData);
 
     try {
-      const response = await fetch('http://localhost:3000/mail/send-email', {
+      const response = await fetch('https://dog-walking-app-server.vercel.app/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
