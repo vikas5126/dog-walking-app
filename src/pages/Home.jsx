@@ -5,7 +5,6 @@ import DoorStep from '../components/DoorStep'
 import Home2sec from '../components/Home2sec'
 import Review from '../components/Review'
 import Footer from '../components/Footer'
-import image1 from "../assets/images/image1.jpg"
 import image2 from "../assets/images/image2.jpg"
 import { Link } from 'react-router-dom'
 
@@ -15,9 +14,12 @@ const home = () => {
         <Navbar/>
         <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse p-6 pt-[2rem] pb-[2rem] homePage'>
           <div className='static w-[80%] flex flex-col justify-center items-start gap-1.5 sm:absolute md:static top-[2rem] md:w-[40%]'>
-            <h1 className='md:text-[3rem] font-bold text-[2.5rem]'>You Never Regret Your Decision.</h1>
-            <p className='text-gray-600'>Join a community of 50k like-minded dog parents and canine experts. Get answers to your queries, shop for dog services and fresh food, and learn how you can become a better dog parent.</p>
-            <Link to={'/walking'}><button className='md:w-[12rem] md:h-[4rem] w-[9rem] h-[3rem] text-[1rem] bg-red-700 rounded-2xl text-white md:text-lg mt-4 mb-4'>Book Trial</button></Link>
+            <h1 className='md:text-[2.2rem] font-bold text-[2.5rem]'>"Lets go out with us and make your furry friend happy and active."</h1>
+            <p className='text-gray-600 text-lg mt-8'>We take your dog out for the best walking experience to reduce boredom and encourage socialization. This helps prevent obesity and behavioral problems, while also strengthening your dog and keeping them active and happy.
+              <br />
+              <p className='mt-8 text-lg'>Go and check out our services by clicking on the Book trail.</p>
+            </p>
+            <Link to={'/walking'}><button className='md:w-[12rem] md:h-[4rem] w-[9rem] h-[3rem] text-[1rem] bg-green-700 rounded-2xl text-white md:text-lg mt-16 mb-4'>Book Trial</button></Link>
           </div>
           <div className='sm:w-[100%] md:w-[30rem] hidden sm:flex'>
             <img src={headerImage} alt="header" className='' />  
@@ -26,11 +28,15 @@ const home = () => {
         <DoorStep/>
         <Home2sec/>
 
-        <div className='flex justify-around flex-wrap items-center w-[100%] p-12 mt-8' >
+        {/* <div className='flex justify-around flex-wrap items-center w-[100%] p-12 mt-8' >
           <Review/>
+        </div> */}
+
+        <div className='flex justify-start items-center overflow-x-scroll gap-14 w-[100%] pl-[3rem] m-auto'>
+            <Review/>
         </div>
 
-        <div className='w-[100%] p-8 md:pr-48 md:pl-48 pr-4 pl-4 bg-gray-200 flex flex-col justify-center items-start gap-4 text-base text-gray-500'>
+        {/* <div className='w-[100%] p-8 md:pr-48 md:pl-48 pr-4 pl-4 bg-gray-200 flex flex-col justify-center items-start gap-4 text-base text-gray-500'>
           <h1 className='text-[2rem] text-blue-500'>Why is Walking Important for Dogs</h1>
           <p>We know you brought a new buddy home. Yes, it is cute and sweet. But now, day after day the bathroom breaks and outdoor strolls are hindering your work routine. No doubt you love your pet intensely, but work is also a crucial part of your life. For times like these, there are Dog Walkers. These hired individuals can take your dog for potty breaks and regular strolls. So you can relax and sit back. </p>
           <p>The fast-paced life and hectic schedules can hinder the quality time and bond between you and your pet. Moreover, it affects your dog’s daily need to exercise and bathroom breaks. For situations like these, there are dog walkers.</p>
@@ -67,7 +73,7 @@ const home = () => {
           <p>Exercise is essential for hyperactive dogs to release their built-up energy. Even though we just want the best for our tiny buddies, our busy schedules prevent us from doing our tasks effectively. You can be with your pet even when you are not there in person. Don’t miss their happy times.</p>
 
           <p>The dog walkers can give you time-to-time updates on their activities even if it’s their upside rolling in Grass. When things get a little too busy to go home for lunch or take a walk with your dog through the neighbourhood in the hours between work and night, we can help. </p>
-        </div>
+        </div> */}
 
         <Footer/>
     </div>

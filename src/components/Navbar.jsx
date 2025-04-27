@@ -14,12 +14,12 @@ const Navbar = () => {
       <Link to={"/"} >
       <div className="flex items-center gap-2">
         <SiDatadog className="w-16 h-16" />
-        <p className="text-xl font-semibold">BarkingTales</p>
+        <p className="text-[2rem] font-semibold font-[cursive]">BarkingTales🐾</p>
       </div>
       </Link>
 
       {/* Desktop nav */}
-      <ul className="hidden lg:flex w-1/2 justify-around items-center text-lg">
+      <ul className="hidden lg:flex w-1/3 justify-around items-center text-lg">
         <li className="list-none"><a href="/">Home</a></li>
         <li className="list-none relative group">
           <Link to={"/grooming"} id='grooming'>

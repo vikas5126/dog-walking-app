@@ -50,13 +50,13 @@ const Form = () => {
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
         <div className="order-1 w-[100%] md:col-span-2 flex flex-col p-4 justify-center items-center mt-8 mb-8">
           <h1 className="text-[2rem] lg:text-[2.5rem]  font-bold text-center">
-            Dog Training at Home <br />
-            “Find the Best Trainer Near You”
+          Get your daily dog walks filled with love, <br /> care, and wagging tails. <br />
+            Select our available packages.
           </h1>
-          <p className="text-gray-400 text-center">
+          {/* <p className="text-gray-400 text-center">
             Advanced, Research-Backed Curriculum with Purposeful Sessions!{" "}
             <br /> Lorem ipsum dolor sit.
-          </p>
+          </p> */}
         </div>
         <div className="order-3 md:order-2 md:col-span-1  w-[90%] m-auto flex flex-col justify-center text-md ">
           <div className="flex justify-center items-center mt-8 mb-4">

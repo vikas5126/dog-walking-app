@@ -14,21 +14,33 @@ const DogWalkingSubscription = ({selectedOption}) => {
   // };
 
   const calculatePrice = () => {
-    let base = 299;
-    if (duration === "40 mins") base += 100;
-    if (walks === "Duo") base *= 2;
-    if (days === "Monday-Saturday") base -= 50;
-    if (billing === "Weekly") return base * 4;
-    if (billing === "Quarterly") return base * 3 * 0.9; // 10% discount
-    return base * 4.5; // Monthly
+    // let base = 700;
+    // if (duration === "40 mins") base += 600;
+    // if (walks === "Duo") base *= 2;
+    // if (days === "Monday-Saturday") base -= 200;
+    // if() {
+    //   return 6499; // 10% discount for 7 days
+    // }
+    // if (billing === "Weekly") return base * 4;
+    // if (billing === "Quarterly") return base * 3 * 0.9; // 10% discount
+    // return Math.floor(base * 4.583); // Monthly
+    if(days === "7 days" && walks === "Duo" && billing === "Monthly" && duration === "20 mins") {
+      return 6499; // 10% discount for 7 days
+    }
+    if(days === "7 days" && walks != "Duo" && billing === "Monthly" && duration === "20 mins") {
+      return 3799; // 10% discount for 7 days
+    }
+    if(days === "7 days" && walks != "Duo" && billing === "weekly" && duration === "20 mins") {
+      return 5499; // 10% discount for 7 days
+    }
   };
 
-  const formattedPrice = `₹ ${calculatePrice().toFixed(2)}/-`;
+  const formattedPrice = `₹ ${calculatePrice()}`;
 
   return (
     <div className="w-full mx-auto p-8 rounded-2xl border shadow-md bg-white">
       <h2 className="text-[2rem] font-bold mb-2 text-center">
-        Dog Walking Basic Subscription
+        Select Your Package
       </h2>
       <p className="text-purple-700 font-semibold text-lg mb-4 pl-8">Priced at {formattedPrice}</p>
 

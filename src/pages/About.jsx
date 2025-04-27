@@ -3,18 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const About = () => {
-  const [review, setReview] = useState({
-    name: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Review submitted:", review);
-    setSubmitted(true);
-    setReview({ name: "", message: "" });
-  };
 
   return (
     <>
@@ -24,7 +12,7 @@ const About = () => {
 
       <section className="mb-12">
         <p className="text-lg leading-relaxed text-gray-700">
-          Welcome to <span className="font-semibold">Bark&Tails</span> – your trusted partner for professional dog walking and grooming services!
+          Welcome to <span className="font-semibold">BarkingTales</span> – your trusted partner for professional dog walking and grooming services!
           We believe your furry friend deserves the best care, and our trained team ensures safe walks, stress-free grooming, and a tail-wagging experience every time.
         </p>
 
@@ -43,34 +31,19 @@ const About = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Leave a Review 🐾</h2>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-xl">
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={review.name}
-            onChange={(e) => setReview({ ...review, name: e.target.value })}
-            className="border border-gray-300 rounded-md px-4 py-2"
-            required
-          />
-          <textarea
-            placeholder="Your Feedback"
-            value={review.message}
-            onChange={(e) => setReview({ ...review, message: e.target.value })}
-            className="border border-gray-300 rounded-md px-4 py-2"
-            rows="4"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
-          >
-            Submit Review
-          </button>
-          {submitted && (
-            <p className="text-green-600 text-sm">Thank you for your feedback!</p>
-          )}
-        </form>
+        
+        
+        <div>
+        <h1 className='text-[1.5rem] text-gray-700'>We Provide You With</h1>
+        <div className='w-[100%] p-4'>
+        <li>Professionals</li>
+        <li>Medium to Talk and Connect with Service Providers</li>
+        <li>Easy Payment Options</li>
+        <li>Affordable Packages</li>
+        <li>24/7 Customer Care Service</li>
+        <li>Easy Access to Service Providers</li>
+      </div>
+        </div>
       </section>
     </div>
     <Footer/>

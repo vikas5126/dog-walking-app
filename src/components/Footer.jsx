@@ -1,20 +1,35 @@
 import React from "react";
+import { useState } from "react";     
 import { RiCustomerService2Line } from "react-icons/ri";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { SiDatadog } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+  const [review, setReview] = useState({
+    name: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Review submitted:", review);
+    setSubmitted(true);
+    setReview({ name: "", message: "" });
+  };
+
   return (
     <>
       <div className="relative w-[100%] bg-gray-200 mt-12 p-6 box-border">
         <div className="flex w-full box-border gap-8 flex-wrap justify-around">
-          <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4">
+          <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 justify-center">
             <SiDatadog className='w-[6rem] h-[5rem]'/>
-            <span className='text-xl font-semibold'>Bark & Beyond</span>
+            <span className='text-2xl font-semibold font-[cursive]'>BarkingTales</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur recusandae asperiores
-              corporis. A accusantium delectus provident{" "}
-              <a href="/about">Explore More</a>
+            Reliable dog walking and care packages tailored to your pup.
+              {/* <a href="/about">Explore More</a> */}
             </p>
             <div className="flex gap-4 text-3xl mt-2">
               <i className="ri-twitter-fill"></i>
@@ -26,38 +41,58 @@ const Footer = () => {
           <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 mt-4">
             <p className="text-2xl font-semibold">Quick Links</p>
             <p>Training</p>
-            <p>Grooming</p>
-            <p>Walking</p>
-            <p>About Us</p>
-            <p>Contact Us</p>
+            {/* <p>Grooming</p> */}
+          <Link to={"/walking"}><p>Walking</p></Link>
+            <p>Connect With Us </p>
+            <p>Term & Conditions</p>
+            <Link to={"/about"}><p>About Us</p></Link>
+            {/* <p>Contact Us</p> */}
           </div>
-          <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 mt-4">
+          {/* <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 mt-4">
             <p className="text-2xl font-semibold"> Account Info</p>
             <p>My Account</p>
             <p>Privacy Policy</p>
             <p>Return Policy</p>
             <p>Terms & Conditions</p>
-          </div>
+          </div> */}
           <div className="w-[11rem] sm:w-[25%] flex flex-col gap-4 mt-4">
-            <p className="text-2xl font-semibold">Contact Details</p>
-            <p>
-              <i className="ri-home-9-fill"></i> Trinagar, delhi-110034
-            </p>
-            <p>
-              <i className="ri-mail-fill"></i> rahul123@gmail.com
-            </p>
-            <p>
-              <i className="ri-phone-fill"></i> +91-999999999
-            </p>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-xl ml-[-7rem]">
+          <h2 className="text-2xl font-semibold mb-4">Leave a Review 🐾</h2>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={review.name}
+            onChange={(e) => setReview({ ...review, name: e.target.value })}
+            className="border border-gray-300 rounded-md px-4 py-2 bg-white"
+            required
+          />
+          <textarea
+            placeholder="Your Feedback"
+            value={review.message}
+            onChange={(e) => setReview({ ...review, message: e.target.value })}
+            className="border border-gray-300 rounded-md px-4 py-2 bg-white"
+            rows="4"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+          >
+            Submit Review
+          </button>
+          {submitted && (
+            <p className="text-green-600 text-sm">Thank you for your feedback!</p>
+          )}
+        </form>
           </div>
         </div>
         <hr className="mt-8" />
         <div className="flex justify-between items-center mt-4 w-[100%]">
           <div>
-            <p>© 2023 Brak & Beyond. All rights reserved.</p>
+            <p>© 2023 BrakingTales. All rights reserved.</p>
           </div>
           <div>
-            <p>Designed by Brak & Beyond</p>
+            <p>Designed by BrakingTales</p>
           </div>
         </div>
       </div>
