@@ -7,10 +7,12 @@ import Grooming from './pages/Grooming.jsx'
 import Training from './pages/Training.jsx'
 import Walking from './pages/Walking.jsx'
 import'./App.css'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 const App = () => {
   return (
     <div>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />

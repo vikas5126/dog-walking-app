@@ -12,16 +12,16 @@ const home = () => {
   return (
     <div id='home'>
         <Navbar/>
-        <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse p-6 pt-[2rem] pb-[2rem] homePage'>
-          <div className='static w-[80%] flex flex-col justify-center items-start gap-1.5 sm:absolute md:static top-[2rem] md:w-[40%]'>
-            <h1 className='md:text-[2.2rem] font-bold text-[2.5rem]'>"Lets go out with us and make your furry friend happy and active."</h1>
+        <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse sm:p-6 pt-[2rem] pb-[2rem] homePage'>
+          <div className='static w-[80%] flex flex-col justify-center items-start gap-1.5  md:static top-[2rem] md:w-[40%]'>
+            <h1 className='md:text-[2.2rem] font-bold text-[2rem]'>"Lets go out with us and make your furry friend happy and active."</h1>
             <p className='text-gray-600 text-lg mt-8'>We take your dog out for the best walking experience to reduce boredom and encourage socialization. This helps prevent obesity and behavioral problems, while also strengthening your dog and keeping them active and happy.
               <br />
               <p className='mt-8 text-lg'>Go and check out our services by clicking on the Book trail.</p>
             </p>
             <Link to={'/walking'}><button className='md:w-[12rem] md:h-[4rem] w-[9rem] h-[3rem] text-[1rem] bg-green-700 rounded-2xl text-white md:text-lg mt-16 mb-4'>Book Trial</button></Link>
           </div>
-          <div className='sm:w-[100%] md:w-[30rem] hidden sm:flex'>
+          <div className='w-[100%] md:w-[30rem] hidden md:flex'>
             <img src={headerImage} alt="header" className='' />  
           </div>
         </div>
@@ -32,7 +32,7 @@ const home = () => {
           <Review/>
         </div> */}
 
-        <div className='flex justify-start items-center overflow-x-scroll gap-14 w-[100%] pl-[3rem] m-auto'>
+        <div className='flex justify-start items-center overflow-x-scroll gap-14 w-[100%] sm:pl-[3rem] pl-[1rem] m-auto'>
             <Review/>
         </div>
 

@@ -24,7 +24,7 @@ const Footer = () => {
     <>
       <div className="relative w-[100%] bg-gray-200 mt-12 p-6 box-border">
         <div className="flex w-full box-border gap-8 flex-wrap justify-around">
-          <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 justify-center">
+          <div className="w-[16rem] sm:w-[25%] flex flex-col gap-4 justify-start sm:justify-center">
             <SiDatadog className='w-[6rem] h-[5rem]'/>
             <span className='text-2xl font-semibold font-[cursive]'>BarkingTales</span>
             <p>
@@ -38,7 +38,7 @@ const Footer = () => {
               <i className="ri-linkedin-box-fill"></i>
             </div>
           </div>
-          <div className="w-[10rem] sm:w-[25%] flex flex-col gap-4 mt-4">
+          <div className="w-[16rem] sm:w-[25%] flex flex-col gap-4 mt-4">
             <p className="text-2xl font-semibold">Quick Links</p>
             <p>Training</p>
             {/* <p>Grooming</p> */}
@@ -55,8 +55,8 @@ const Footer = () => {
             <p>Return Policy</p>
             <p>Terms & Conditions</p>
           </div> */}
-          <div className="w-[11rem] sm:w-[25%] flex flex-col gap-4 mt-4">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-xl ml-[-7rem]">
+          <div className="w-[17rem] sm:w-[25%] flex flex-col gap-4 mt-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-xl sm:ml-[-3rem]">
           <h2 className="text-2xl font-semibold mb-4">Leave a Review 🐾</h2>
           <input
             type="text"
