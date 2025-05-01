@@ -77,7 +77,7 @@ const home = () => {
         </div> */}
 
         <Footer/>
-        <div className='fixed bottom-0 left-[95%] w-full p-4 text-center'>
+        <div className='left-[80%] fixed bottom-0 md:left-[90%] lg:left-[95%] w-[5rem] p-4 text-center'>
           <a href="https://wa.me/+917339918386" target='_blank'>
           <img src={whatsapp} alt="" />
           </a>
