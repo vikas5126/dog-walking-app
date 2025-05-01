@@ -7,6 +7,7 @@ import Review from '../components/Review'
 import Footer from '../components/Footer'
 import image2 from "../assets/images/image2.jpg"
 import { Link } from 'react-router-dom'
+import whatsapp from "../assets/images/whatsapp.png"
 
 const home = () => {
   return (
@@ -76,6 +77,11 @@ const home = () => {
         </div> */}
 
         <Footer/>
+        <div className='fixed bottom-0 left-[95%] w-full p-4 text-center'>
+          <a href="https://wa.me/+917339918386" target='_blank'>
+          <img src={whatsapp} alt="" />
+          </a>
+        </div>
     </div>
   )
 }

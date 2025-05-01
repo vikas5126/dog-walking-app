@@ -89,7 +89,7 @@ const Footer = () => {
         <hr className="mt-8" />
         <div className="flex justify-between items-center mt-4 w-[100%]">
           <div>
-            <p>© 2023 BrakingTales. All rights reserved.</p>
+            <p>© 2025 BrakingTales. All rights reserved.</p>
           </div>
           <div>
             <p>Designed by BrakingTales</p>
