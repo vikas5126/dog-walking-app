@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import coverImage from "../assets/images/dogo.jpg";
+import coverImage from "../assets/images/dogo1.png";
 import DogWalkingSubscription from "./DogWalkingSubscription ";
 // className='w-[100%] flex flex-col-reverse md:flex-row  gap-6 mt-4'
 const Form = () => {

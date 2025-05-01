@@ -1,5 +1,5 @@
 import React from 'react'
-import coverImage from '../assets/images/dogo.jpg'
+import coverImage from '../assets/images/dogo1.png'
 import { Link } from 'react-router-dom'
 
 const Home2sec = () => {

@@ -27,6 +27,9 @@ const DogWalkingSubscription = ({selectedOption}) => {
     if(days === "7 days" && walks === "Duo" && billing === "Monthly" && duration === "20 mins") {
       return 6499; // 10% discount for 7 days
     }
+    if(days === "7 days" && walks === "Duo" && billing === "weekly" && duration === "20 mins") {
+      return 9499; // 10% discount for 7 days
+    }
     if(days === "7 days" && walks != "Duo" && billing === "Monthly" && duration === "20 mins") {
       return 3799; // 10% discount for 7 days
     }
