@@ -8,42 +8,31 @@ const About = () => {
     <>
     <Navbar/>
     <div className="w-full px-6 py-12 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-6">About Us</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
 
-      <section className="mb-12">
-        <p className="text-lg leading-relaxed text-gray-700">
-          Welcome to <span className="font-semibold">BarkingTales</span> – your trusted partner for professional dog walking and grooming services!
-          We believe your furry friend deserves the best care, and our trained team ensures safe walks, stress-free grooming, and a tail-wagging experience every time.
-        </p>
+      <section className="mb-12 flex flex-col text-lg gap-6">
+<h1 className="text-2xl">Why should you hire Barkingtales dog walker professional.</h1>
 
-        <ul className="list-disc pl-6 mt-4 text-gray-700">
-          <li>🐶 Personalized dog walking sessions tailored to your pet’s energy.</li>
-          <li>✂️ Gentle grooming with love and professional-grade tools.</li>
-          <li>🏡 At-home convenience and flexible scheduling.</li>
-        </ul>
-      </section>
 
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-2">Our Mission</h2>
-        <p className="text-gray-700">
-          We’re on a mission to make every pet feel loved, clean, and cared for. Whether it's a playful walk in the park or a refreshing bath at home, your pet's wellbeing is our priority.
-        </p>
-      </section>
+<p className="text-lg">Hiring a professional *Barkingtales Dog Walker* can greatly benefit both you and your pet. Here’s why it’s a smart choice:</p>  
 
-      <section>
-        
-        
-        <div>
-        <h1 className='text-[1.5rem] text-gray-700'>We Provide You With</h1>
-        <div className='w-[100%] p-4'>
-        <li>Professionals</li>
-        <li>Medium to Talk and Connect with Service Providers</li>
-        <li>Easy Payment Options</li>
-        <li>Affordable Packages</li>
-        <li>24/7 Customer Care Service</li>
-        <li>Easy Access to Service Providers</li>
-      </div>
-        </div>
+<li>We Ensures Regular Exercise: Busy schedules can make it hard to walk your dog consistently. We ensures your pet gets daily exercise, preventing obesity and related health issues.</li>  
+
+<li>Reduces Anxiety & Boredom: Dogs left alone for long hours may develop *separation anxiety* or destructive behaviors (chewing, barking). We provide stimulation and breaks up their day.</li>  
+
+<li>Maintains Potty Routine: Puppies and senior dogs need frequent bathroom breaks. Where we can help them stay healthy with their routine.</li>  
+
+<li>Socialization Opportunities: We expose your dog to new environments, people, and other pets, improving their *social skills* and reducing aggression/fear.</li>
+
+<li>Peace of Mind for Owners: Instead of rushing home, you can focus on work or errands, knowing your dog is cared for. You can stay connected with the walker.
+</li>
+
+<li>Helps with Training Reinforcement: Many walkers practice *basic commands* (sit, stay, heel) during walks, supporting your training efforts.</li>
+
+<li>Ideal for High-Energy Breeds: Working dogs (Border Collies, Huskies) or young dogs need *extra activity*—a walker ensures they stay tired and well-behaved.  </li>
+  
+
+<b className="mt-4">A *reliable dog walker* ensures your pet stays *happy, healthy, and well-exercised*—worth every penny! 🐾💖</b>
       </section>
     </div>
     <Footer/>

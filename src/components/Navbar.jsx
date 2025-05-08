@@ -43,10 +43,10 @@ const Navbar = () => {
       <div className={`fixed top-0 right-0 h-full w-[70%] bg-[#f0f0f0] shadow-lg z-20 p-6 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       <GiCrossedBones className="w-8 h-8" onClick={toggleMenu}/>
         <ul className="flex flex-col gap-4 text-lg mt-16">
-            <li className="list-none"><a href="/">Home</a></li>
+            <li className="list-none"><Link to={"/"}>Home</Link></li>
             <hr />
           <li className="flex justify-start gap-8 items-center">
-            <a href="/grooming">Grooming</a>
+            <Link to={"/grooming"}>Grooming</Link>
             <span className="bg-red-600 text-amber-100 text-xs px-3 py-1 rounded-lg">coming soon</span>
           </li>
           <hr />

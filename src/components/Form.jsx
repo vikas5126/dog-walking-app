@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import coverImage from "../assets/images/dogo1.png";
+import coverImage from "../assets/images/Collage1.jpg";
 import DogWalkingSubscription from "./DogWalkingSubscription ";
 // className='w-[100%] flex flex-col-reverse md:flex-row  gap-6 mt-4'
 const Form = () => {
@@ -96,8 +96,8 @@ const Form = () => {
     className="w-[100%] border-2 border-gray-300 rounded-lg p-4 gap-4 items-start"
   >
     <h2 className="text-[2rem] font-semibold text-center mb-6">
-      Book Dog Training Demo{" "}
-      <span className="text-blue-700">at &#8377;99 only</span>
+      Book Your Trial
+      <span className="text-blue-700">&nbsp; @ &#8377;99 only</span>
     </h2>
 
     <div className="w-[100%] flex flex-col gap-2">
@@ -172,9 +172,10 @@ const Form = () => {
       >
         <option value="">Select</option>
         <option value="pitampura">Pitampura</option>
-        <option value="rohini">Rohini</option>
+        <option value="rohini">Rohini sec 1 to 18</option>
         <option value="Punjabi Bagh">Punjabi Bagh</option>
         <option value="Ashok Vihar">Ashok Vihar</option>
+        <option value="Shalimar Bagh">Shalimar Bagh</option>
       </select>
     </div>
 
@@ -197,7 +198,7 @@ const Form = () => {
       )}
         </div>
 
-        <div className="order-2 md:order-3 md:col-span-1 w-[90%] m-auto ">
+        <div className="order-2 md:order-3 md:col-span-1 w-[80%] m-auto ">
           <img src={coverImage} alt="real Image" className="rounded-[20px]" />
         </div>
       </div>

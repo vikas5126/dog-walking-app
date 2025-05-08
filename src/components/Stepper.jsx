@@ -7,7 +7,7 @@ const Stepper = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center mt-24 mb-32'>
         <h1 className='text-[2rem] font-bold mb-12 text-center'>
-            How to Get Dog Training Demo
+            How to Get Dog Walking Demo
         </h1>
         <div className='flex flex-col md:flex-row md:w-[70%] justify-around items-center w-[100%] gap-8'>
             <div className='flex flex-col justify-center items-center border-1 border-gray-300 p-4 w-60 rounded-lg'>
