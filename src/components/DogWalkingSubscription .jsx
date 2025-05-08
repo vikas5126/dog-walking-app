@@ -121,7 +121,7 @@ const DogWalkingSubscription = ({selectedOption}) => {
       <h2 className="text-[2rem] font-bold mb-2 text-center">
         Select Your Package or Trial @ ₹99
       </h2>
-      <p className="text-purple-700 bg-purple-300 rounded-lg font-semibold text-lg mb-4 pl-8 w-[20rem] h-10">Priced at <span className="text-2xl">{formattedPrice}</span> &nbsp; <span className="text-red-500 line-through">{mrp}</span></p>
+      <p className="text-purple-700 bg-purple-300 rounded-lg font-semibold text-lg mb-4 pl-8 w-[20rem] h-10 dogWalkingPrice">Priced at <span className="text-2xl">{formattedPrice}</span> &nbsp; <span className="text-red-500 line-through">{mrp}</span></p>
 
       {/* Walk Duration */}
       <div className="mb-3">

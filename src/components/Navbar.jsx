@@ -14,7 +14,7 @@ const Navbar = () => {
       <Link to={"/"} >
       <div className="flex items-center gap-2">
         <SiDatadog className="w-16 h-16" />
-        <p className="text-[2rem] font-semibold font-[cursive]">BarkingTales🐾</p>
+        <p className="text-[1.5rem] md:text-[2rem] font-semibold font-[cursive]">BarkingTales🐾</p>
       </div>
       </Link>
 

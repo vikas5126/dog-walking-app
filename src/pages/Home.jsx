@@ -15,7 +15,7 @@ const home = () => {
         <Navbar/>
         <div className='relative header flex justify-around w-[100%] items-center bg-[#f1d6bb] md:flex-row flex-col-reverse sm:p-0 pt-[2rem] pb-[2rem] homePage'>
           <div className='static w-[80%] flex flex-col justify-center items-start gap-1.5  md:static top-[2rem] md:w-[40%]'>
-            <h1 className='md:text-[2rem] font-bold text-[2.5rem] mt-[-4rem]'>Barkingtales your dog’s favorite."after you"</h1>
+            <h1 className='md:text-[2rem] font-bold text-[2rem] lg:mt-[-4rem]'>BarkingTales your dog’s favorite. "after you"</h1>
             <p className='font-bold mt-4 text-lg text-gray-800'>"Lets go out with us and make your furry friend happy and active."</p>
             <p className='text-gray-600 text-lg mt-6'>We take your dog out for the best walking experience to reduce boredom and encourage socialization. This helps prevent obesity and behavioral problems, while also strengthening your dog and keeping them active and happy.
               <br />
