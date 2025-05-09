@@ -21,7 +21,7 @@ const Walking = () => {
         <Review/>
     </div> */}
 
-    <div className='w-[100%] p-[4rem] md:pr-48 md:pl-48 bg-gray-200 flex flex-col justify-center items-start gap-4 text-base text-black'>
+    <div className='w-[100%] p-[1rem] md:pr-48 md:pl-48 bg-gray-200 flex flex-col justify-center items-start gap-4 text-base text-black'>
               {/* <h1 className='text-[2rem] text-blue-500'>Why is Walking Important for Dogs</h1>
               <p>We know you brought a new buddy home. Yes, it is cute and sweet. But now, day after day the bathroom breaks and outdoor strolls are hindering your work routine. No doubt you love your pet intensely, but work is also a crucial part of your life. For times like these, there are Dog Walkers. These hired individuals can take your dog for potty breaks and regular strolls. So you can relax and sit back. </p>
               <p>The fast-paced life and hectic schedules can hinder the quality time and bond between you and your pet. Moreover, it affects your dog’s daily need to exercise and bathroom breaks. For situations like these, there are dog walkers.</p>
@@ -51,7 +51,7 @@ const Walking = () => {
 
 
 
-              <h1 className='text-[2rem] text-black'>Dog walking is essential for a dog's which help them  physically, mentally, and emotionally well-being. Here’s why:</h1>
+              <b className='text-[1.4rem] text-black'>Dog walking is essential for a dog's which help them  physically, mentally, and emotionally well-being. Here’s why:</b>
           <li><b>Physical Health–</b> Regular walks help maintain a healthy weight, improve cardiovascular fitness, and strengthen muscles.</li>
           <li><b>Mental Stimulation– </b>Dogs explore new scents, sights, and sounds, preventing boredom and destructive behaviors.</li>
           <li><b>Behavioral Benefits–</b> Walking reduces hyperactivity, anxiety, and aggression by burning excess energy.</li>
@@ -59,7 +59,7 @@ const Walking = () => {
           <li><b>Bonding Time–</b> Walking strengthens the owner-dog relationship through shared activity and trust.</li>
           <li><b>Prevents Health Issues–</b> Regular exercise aids digestion, joint health, and reduces risks of obesity-related diseases.</li>
           <li><b>Routine & Discipline– </b>Scheduled walks create structure, reinforcing good habits and potty training.</li>
-          <p className='text-[2rem] text-black'>A daily walk is a simple yet powerful way to keep your dog happy, healthy, and well-behaved with wagging tail! 🐕</p>
+          <b className='text-[1.4rem] text-black'>A daily walk is a simple yet powerful way to keep your dog happy, healthy, and well-behaved with wagging tail! 🐕</b>
             </div>
     <Footer/> 
     </>

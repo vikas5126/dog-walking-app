@@ -37,7 +37,7 @@ const Form = () => {
       const data = await response.json();
       if (data.success) {
         setStatus({ message: data.message, success: true });
-        setFormData({ name: '', petName: '', Breed: '', phone: '', location: '', Trail: '' });
+        setFormData({ name: '', petName: '', Breed: '', phone: '', location: '', Trial: '' });
       } else {
         setStatus({ message: data.message, success: false });
       }
@@ -97,8 +97,8 @@ const Form = () => {
     className="w-[100%] border-2 border-gray-300 rounded-lg p-4 gap-4 items-start"
   >
     <h2 className="text-[2rem] font-semibold text-center mb-6">
-      Book Your Trial
-      <span className="text-blue-700">&nbsp; @ &#8377;99 only</span>
+      Fill Your Details
+      {/* <span className="text-blue-700">&nbsp; @ &#8377;99 only</span> */}
     </h2>
 
     <div className="w-[100%] flex flex-col gap-2">
