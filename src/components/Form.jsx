@@ -30,7 +30,7 @@ const Form = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-      console.log(response);
+      console.log(formData);
       if (!response.ok) {
         throw new Error('Server Error');
       }
@@ -191,7 +191,7 @@ const Form = () => {
       type="submit"
       className="w-[100%] m-auto h-14 bg-red-700 text-white rounded-md text-xl mt-4 hover:bg-red-800 hover:text-white transition duration-300 ease-in-out"
     >
-      Book Demo Now
+      Submit Details
     </button>
   </form>
 ) : (
