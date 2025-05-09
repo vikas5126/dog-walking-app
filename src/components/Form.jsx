@@ -10,6 +10,7 @@ const Form = () => {
     Breed: "",
     phone: "",
     location: "",
+    Trial: ""
   });
   const [status, setStatus] = useState(false); 
 
@@ -36,7 +37,7 @@ const Form = () => {
       const data = await response.json();
       if (data.success) {
         setStatus({ message: data.message, success: true });
-        setFormData({ name: '', petName: '', Breed: '', phone: '', location: '' });
+        setFormData({ name: '', petName: '', Breed: '', phone: '', location: '', Trail: '' });
       } else {
         setStatus({ message: data.message, success: false });
       }
@@ -177,6 +178,13 @@ const Form = () => {
         <option value="Ashok Vihar">Ashok Vihar</option>
         <option value="Shalimar Bagh">Shalimar Bagh</option>
       </select>
+    </div>
+
+    <div className="w-[100%] flex gap-2 mt-8 mr-8 mb-4">
+      <input type="checkbox" value="Trial" className="w-6 mr-2" onChange={(e) =>
+          setFormData({ ...formData, Trial: e.target.value })
+        }/>
+      <label htmlFor="location" className="font-semibold">Get Trial @99</label>
     </div>
 
     <button
