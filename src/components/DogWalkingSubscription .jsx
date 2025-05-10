@@ -78,7 +78,7 @@ const DogWalkingSubscription = ({selectedOption}) => {
       return {"price" : 6499, "mrp": 6999}; // 10% discount for 7 days
     }
     if(days === "7 days" && walks === "Duo" && billing === "Quarterly" && duration === "30 mins") {
-      return {"price" : 24999, "mrp": 22999}; // 10% discount for 7 days
+      return {"price" : 22999, "mrp": 24999}; // 10% discount for 7 days
     }
 
     if(days === "7 days" && walks != "Duo" && billing === "Monthly" && duration === "30 mins") {
@@ -88,7 +88,7 @@ const DogWalkingSubscription = ({selectedOption}) => {
       return {"price" : 4199, "mrp": 4699}; ; // 10% discount for 7 days
     }
     if(days === "7 days" && walks != "Duo" && billing === "Quarterly" && duration === "30 mins") {
-      return {"price" : 13199, "mrp": 11499}; ; // 10% discount for 7 days
+      return {"price" : 11499, "mrp": 13199}; ; // 10% discount for 7 days
     }
 
 
@@ -99,7 +99,7 @@ const DogWalkingSubscription = ({selectedOption}) => {
       return {"price" : 6499, "mrp": 6999}; // 10% discount for 7 days
     }
     if(days === "6 days" && walks === "Duo" && billing === "Quarterly" && duration === "30 mins") {
-      return {"price" : 18999, "mrp": 17499}; // 10% discount for 7 days
+      return {"price" : 17499, "mrp": 18999}; // 10% discount for 7 days
     }
 
     if(days === "6 days" && walks != "Duo" && billing === "Monthly" && duration === "30 mins") {
