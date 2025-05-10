@@ -181,11 +181,16 @@ const Form = () => {
     </div>
 
     <div className="w-[100%] flex gap-2 mt-8 mr-8 mb-4">
-      <input type="checkbox" value="Trial" className="w-6 mr-2" onChange={(e) =>
-          setFormData({ ...formData, Trial: e.target.value })
-        }/>
-      <label htmlFor="location" className="font-semibold">Get Trial @99</label>
-    </div>
+  <input
+    type="checkbox"
+    checked={formData.Trial === "Trial"}
+    onChange={(e) =>
+      setFormData({ ...formData, Trial: e.target.checked ? "Trial" : "" })
+    }
+    className="w-6 mr-2"
+  />
+  <label htmlFor="Trial" className="font-semibold">Get Trial @99</label>
+</div>
 
     <button
       type="submit"
