@@ -103,7 +103,7 @@ const DogWalkingSubscription = ({selectedOption}) => {
     }
 
     if(days === "6 days" && walks != "Duo" && billing === "Monthly" && duration === "30 mins") {
-      return {"price" : 3899, "mrp": 3399}; ; // 10% discount for 7 days
+      return {"price" : 3399, "mrp": 3899}; ; // 10% discount for 7 days
     }
     if(days === "6 days" && walks != "Duo" && billing === "Weekly" && duration === "30 mins") {
       return {"price" : 4199, "mrp": 4699}; ; // 10% discount for 7 days

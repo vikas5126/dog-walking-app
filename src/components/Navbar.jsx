@@ -29,6 +29,14 @@ const Navbar = () => {
             coming soon
           </span>
         </li>
+        <li className="list-none relative group">
+          <Link to={"/"} id='grooming'>
+            Day Boarding
+          </Link>
+          <span className="absolute top-8 left-1/2 -translate-x-1/2 hidden group-hover:flex bg-white text-black p-2 rounded shadow-lg text-sm w-[8rem] justify-center">
+            coming soon
+          </span>
+        </li>
         <li className="list-none"><Link to={"/walking"}>Walking</Link></li>
         {/* <li className="list-none"><Link to={"/contact"}>Contact Us</Link></li> */}
         <li className="list-none"><Link to={"/about"}>About Us</Link></li>
@@ -47,6 +55,11 @@ const Navbar = () => {
             <hr />
           <li className="flex justify-start gap-8 items-center">
             <Link to={"/grooming"}>Grooming</Link>
+            <span className="bg-red-600 text-amber-100 text-xs px-3 py-1 rounded-lg">coming soon</span>
+          </li>
+          <hr />
+           <li className="flex justify-start gap-8 items-center">
+            <Link to={"/"}>Day Boarding</Link>
             <span className="bg-red-600 text-amber-100 text-xs px-3 py-1 rounded-lg">coming soon</span>
           </li>
           <hr />
