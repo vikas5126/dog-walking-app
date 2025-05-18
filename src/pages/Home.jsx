@@ -5,9 +5,10 @@ import DoorStep from '../components/DoorStep'
 import Home2sec from '../components/Home2sec'
 import Review from '../components/Review'
 import Footer from '../components/Footer'
-import image2 from "../assets/images/image2.jpg"
+// import image2 from "../assets/images/image2.jpg"
 import { Link } from 'react-router-dom'
 import whatsapp from "../assets/images/whatsapp.png"
+import instagram from "../assets/images/instagram.png"
 
 const home = () => {
   return (
@@ -78,10 +79,16 @@ const home = () => {
         </div> */}
 
         <Footer/>
-        <div className='left-[80%] fixed bottom-0 md:left-[90%] lg:left-[95%] w-[5rem] p-4 text-center'>
-          <a href="https://wa.me/+918860820069" target='_blank'>
+        <div className='flex flex-col gap-2 left-[80%] fixed bottom-0 md:left-[90%] lg:left-[95%] w-[5rem] p-4 text-center'>
+          <div><a href="https://wa.me/+918860820069" target='_blank'>
           <img src={whatsapp} alt="" />
-          </a>
+          </a></div>
+          <div>
+  <a href="https://www.instagram.com/barkingtales01" target="_blank" rel="noopener noreferrer">
+    <img src={instagram} alt="Instagram" />
+  </a>
+</div>
+
         </div>
     </div>
   )
