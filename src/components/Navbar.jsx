@@ -10,7 +10,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="navbar flex w-full p-4 bg-[#f0f0f0] justify-between items-center sticky top-0 z-10">
+    <div className="flex w-full p-4 bg-[#f0f0f0] justify-between items-center sticky top-0 z-10">
       <Link to={"/"} >
       <div className="flex items-center gap-2">
         <SiDatadog className="w-16 h-16" />

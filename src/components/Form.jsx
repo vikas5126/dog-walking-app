@@ -173,10 +173,10 @@ const Form = () => {
         required
       >
         <option value="">Select</option>
-        <option value="pitampura">North Delhi</option>
-        <option value="rohini">West Delhi</option>
-        <option value="Punjabi Bagh">East Delhi</option>
-        <option value="Ashok Vihar">South Delhi</option>
+        <option value="North Delhi">North Delhi</option>
+        <option value="West Delhi">West Delhi</option>
+        <option value="East Delhi">East Delhi</option>
+        <option value="South Delhi">South Delhi</option>
       </select>
     </div>
 
